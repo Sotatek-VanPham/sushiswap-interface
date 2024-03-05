@@ -5957,10 +5957,10 @@ csstype@^3.0.2, csstype@^3.1.1:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
-cypress-repeat@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/cypress-repeat/-/cypress-repeat-2.3.3.tgz#0a0d363347137248600eff57f4ae75e4526e88d9"
-  integrity sha512-DoPiN5A/SMC9p6B2lRbvOxQvQUS6LO8Zeblkc3ZQQl5cQMmGBa15EOMLdBpQ1ctjOgssvcYawodBkxiNMHI49g==
+cypress-repeat@^2.3.4:
+  version "2.3.4"
+  resolved "https://registry.yarnpkg.com/cypress-repeat/-/cypress-repeat-2.3.4.tgz#77df10b91e5e8d5e3400e7d80981e1e5b08177c2"
+  integrity sha512-93rf+2TpPyU6bzb2fCKjzrJOA3mT6gMk8CexnB2Z5ReqXAWZQUHnxy+0RceZjWVwKRy0fLCjZ1P7x7QfVvl4wg==
   dependencies:
     arg "5.0.2"
     bluebird "3.7.2"
