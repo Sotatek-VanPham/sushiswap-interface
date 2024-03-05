@@ -33,7 +33,7 @@
     "@aave/contract-helpers": "1.25.0",
     "@aave/math-utils": "1.25.0",
     "@bgd-labs/aave-address-book": "^2.19.0",
-    "@emotion/cache": "11.10.3",
+    "@emotion/cache": "11.11.0",
     "@emotion/react": "11.10.4",
     "@emotion/server": "latest",
     "@emotion/styled": "11.10.4",
