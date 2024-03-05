@@ -1,26 +1,7 @@
-# General Ignores
-.gitignore
-.eslintcache
-.eslintignore
-.gitattributes
-node_modules/
-public/
-
-# Artifacts
-.next/
-out/
-src/locales/
-
-# IDE
-.vscode
-
-# Env
-.env.*
-
-# Specific Ignores
-*.svg
-*.ico
+# Ignore all CSS files:
+*.css
 *.json
-*.md
-*.log
-*.lock
+*.scss
+*.html
+*.svg
+*.min.js

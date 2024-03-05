@@ -1,49 +1,25 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+tsconfig.tsbuildinfo
 
-# dependencies
 /node_modules
-/.pnp
-.pnp.js
 
-# testing
-/coverage
-cypress/screenshots
-cypress/videos
-
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
 .DS_Store
-*.pem
+.env
 
-# debug
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.dev.development
-.env.production.local
-
-# vercel
+.idea/
 .vercel
+.next
 
-.out
+public/sw.js
+public/sw.js.map
+public/workbox*.js
+public/workbox*.js.map
 
-# ignore package lock due the mandatory usage of yarn
-package-lock.json
+/locale
 
-.eslintcache
+.env
 
-# IDE specific
-.idea
-.vscode
-.env.development
+coverage

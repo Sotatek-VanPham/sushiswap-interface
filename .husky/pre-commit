@@ -1,6 +1,8 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
 
-npx lint-staged
-yarn i18n
-git add ./src/locales
+yarn lint
+yarn lint-staged
+yarn lingui
+# yarn test

@@ -1,20 +1,26 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
-
 version: 2
 updates:
-  - package-ecosystem: 'npm' # See documentation for possible values
-    directory: '/' # Location of package manifests
-    schedule:
-      interval: 'weekly'
-    open-pull-requests-limit: 10
-    labels:
-      - 'dependencies'
-      - 'Ready for Dev Review'
-  - package-ecosystem: 'github-actions'
+  - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      # Check for updates to GitHub Actions every weekday
-      interval: 'weekly'
+      interval: 'daily'
+    commit-message:
+      # Prefix all commit messages with "npm"
+      prefix: 'token list'
+      include: 'scope'
+    labels:
+      - 'tokenlist'
+      # Add default Kodiak `merge.automerge_label`
+      #- 'automerge'
+    allow:
+      - dependency-name: '@sushiswap/bentobox-sdk'
+      - dependency-name: '@sushiswap/chainlink-whitelist'
+      - dependency-name: '@sushiswap/core'
+      - dependency-name: '@sushiswap/core-sdk'
+      - dependency-name: '@sushiswap/default-token-list'
+      - dependency-name: '@sushiswap/kashi-sdk'
+      - dependency-name: '@sushiswap/limit-order-pair-list'
+      - dependency-name: '@sushiswap/limit-order-sdk'
+      - dependency-name: '@sushiswap/tines'
+      - dependency-name: '@sushiswap/trident'
+      - dependency-name: '@sushiswap/trident-sdk'
