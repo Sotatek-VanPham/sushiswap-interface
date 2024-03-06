@@ -186,6 +186,7 @@ const formatBuckets = (buckets: PoolBucketQueryResult[]): PoolBucket[] =>
 // @ts-ignore TYPE NEEDS FIXING
 export const getPoolHourBuckets = async (chainId: ChainId = ChainId.ETHEREUM, variables): Promise<PoolBucket[]> => {
   const result: PoolBucketQueryResult[] = Object.values(
+    /*@ts-ignore TYPE NEEDS FIXING*/
     await fetcher(chainId, poolHourSnapshotsQuery, variables)
   )?.[0] as PoolBucketQueryResult[]
   return formatBuckets(result)
@@ -194,6 +195,7 @@ export const getPoolHourBuckets = async (chainId: ChainId = ChainId.ETHEREUM, va
 // @ts-ignore TYPE NEEDS FIXING
 export const getPoolDayBuckets = async (chainId: ChainId = ChainId.ETHEREUM, variables): Promise<PoolBucket[]> => {
   const result: PoolBucketQueryResult[] = Object.values(
+    /*@ts-ignore TYPE NEEDS FIXING*/
     await fetcher(chainId, poolDaySnapshotsQuery, variables)
   )?.[0] as PoolBucketQueryResult[]
   return formatBuckets(result)
@@ -237,6 +239,7 @@ const formatKpi = ({ id, feesUSD, volumeUSD, liquidity, liquidityUSD, transactio
 // @ts-ignore TYPE NEEDS FIXING
 export const getPoolKpis = async (chainId: ChainId = ChainId.ETHEREUM, variables = {}): Promise<PoolKpi[]> => {
   const result: PoolKpiQueryResult[] = Object.values(
+    /*@ts-ignore TYPE NEEDS FIXING*/
     await fetcher(chainId, poolKpisQuery, variables)
   )?.[0] as PoolKpiQueryResult[]
   return result.map(formatKpi)
@@ -244,6 +247,7 @@ export const getPoolKpis = async (chainId: ChainId = ChainId.ETHEREUM, variables
 
 export const getPoolKpi = async (chainId: ChainId = ChainId.ETHEREUM, variables = {}): Promise<PoolKpi> => {
   const result: PoolKpiQueryResult = Object.values(
+    /*@ts-ignore TYPE NEEDS FIXING*/
     await fetcher(chainId, poolKpiQuery, variables)
   )?.[0] as PoolKpiQueryResult
   return formatKpi(result)

@@ -16,6 +16,7 @@ type Web3ContextType = {
   accounts?: ReturnType<Web3ReactHooks['useAccounts']>
   account?: ReturnType<Web3ReactHooks['useAccount']>
   active?: ReturnType<Web3ReactHooks['useIsActive']>
+  /*@ts-ignore TYPE NEEDS FIXING*/
   error?: ReturnType<Web3ReactHooks['useError']>
   ensNames?: ReturnType<Web3ReactHooks['useENSNames']>
   ensName?: ReturnType<Web3ReactHooks['useENSName']>
@@ -97,6 +98,7 @@ export function ActiveWeb3Provider({
   const accounts = hooks.useAccounts()
   const account = hooks.useAccount()
   const active = hooks.useIsActive()
+  /*@ts-ignore TYPE NEEDS FIXING*/
   const error = hooks.useError()
   const ensNames = hooks.useENSNames()
   const ensName = hooks.useENSName()

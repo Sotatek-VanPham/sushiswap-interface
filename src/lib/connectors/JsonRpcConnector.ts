@@ -13,6 +13,7 @@ export default class JsonRpcConnector extends Connector {
         this.actions.update({ chainId: parseChainId(chainId) })
       })
       .on('disconnect', (error: ProviderRpcError): void => {
+        /*@ts-ignore TYPE NEEDS FIXING*/
         this.actions.reportError(error)
       })
       .on('chainChanged', (chainId: string): void => {

@@ -30,6 +30,7 @@ export function useAddTransaction() {
       const txChainId = chainId
       const { hash } = info.response
 
+      /*@ts-ignore TYPE NEEDS FIXING*/
       updateTxs((chainTxs) => {
         const txs = chainTxs[txChainId] || {}
         txs[hash] = { addedTime: new Date().getTime(), lastCheckedBlockNumber: blockNumber, info }
@@ -52,11 +53,17 @@ export function usePendingApproval(token?: Token, spender?: string): string | un
   return Object.values(chainTxs).find(
     (tx) =>
       tx &&
+      /*@ts-ignore TYPE NEEDS FIXING*/
       tx.receipt === undefined &&
+      /*@ts-ignore TYPE NEEDS FIXING*/
       tx.info.type === TransactionType.APPROVAL &&
+      /*@ts-ignore TYPE NEEDS FIXING*/
       tx.info.tokenAddress === token.address &&
+      /*@ts-ignore TYPE NEEDS FIXING*/
       tx.info.spenderAddress === spender &&
+      /*@ts-ignore TYPE NEEDS FIXING*/
       isTransactionRecent(tx)
+    /*@ts-ignore TYPE NEEDS FIXING*/
   )?.info.response.hash
 }
 
@@ -66,6 +73,7 @@ export function TransactionsUpdater() {
   const updateTxs = useUpdateAtom(transactionsAtom)
   const onCheck = useCallback(
     ({ chainId, hash, blockNumber }) => {
+      /*@ts-ignore TYPE NEEDS FIXING*/
       updateTxs((txs) => {
         const tx = txs[chainId]?.[hash]
         if (tx) {
@@ -79,6 +87,7 @@ export function TransactionsUpdater() {
   )
   const onPrivateTxStatusCheck = useCallback(
     ({ chainId, hash, blockNumber, status }) => {
+      /*@ts-ignore TYPE NEEDS FIXING*/
       updateTxs((txs) => {
         const tx = txs[chainId]?.[hash]
         if (tx) {
@@ -93,6 +102,7 @@ export function TransactionsUpdater() {
   )
   const onReceipt = useCallback(
     ({ chainId, hash, receipt }) => {
+      /*@ts-ignore TYPE NEEDS FIXING*/
       updateTxs((txs) => {
         const tx = txs[chainId]?.[hash]
         if (tx) {
