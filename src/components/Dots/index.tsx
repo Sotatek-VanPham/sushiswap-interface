@@ -8,7 +8,7 @@ interface DotsProps {
 export default function Dots({ children = <span />, className }: DotsProps) {
   return (
     <>
-      <style jsx>
+      <style>
         {`
           .dots::after {
             content: '.';

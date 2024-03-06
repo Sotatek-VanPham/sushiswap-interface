@@ -8,7 +8,7 @@ import TransactionPopup from './TransactionPopup'
 // @ts-ignore TYPE NEEDS FIXING
 const AnimatedFader = ({ duration }) => (
   <div className="h-[3px] bg-dark-800 w-full">
-    <style jsx>{`
+    <style>{`
       .animation {
         animation-duration: ${duration}ms;
         animation-name: fader;
