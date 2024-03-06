@@ -3,7 +3,6 @@ import { BigNumber, BigNumberish } from '@ethersproject/bignumber'
 import { AddressZero } from '@ethersproject/constants'
 import { Contract } from '@ethersproject/contracts'
 import { Web3Provider } from '@ethersproject/providers'
-import { BENTOBOX_ADDRESS, ChainId, WNATIVE } from '@sushiswap/core-sdk'
 import KASHIPAIR_ABI from 'app/constants/abis/kashipair.json'
 import KashiMediumRiskLendingPair from 'app/features/kashi/KashiMediumRiskLendingPair'
 import { toShare } from 'app/functions/bentobox'
@@ -11,6 +10,7 @@ import { getProviderOrSigner, getSigner } from 'app/functions/contract'
 import { ZERO } from 'app/functions/math'
 import { toElastic } from 'app/functions/rebase'
 import { KashiPermit } from 'app/hooks/useKashiApproveCallback'
+import { BENTOBOX_ADDRESS, ChainId, WNATIVE } from 'colend-forking-sdk'
 
 export async function signMasterContractApproval(
   bentoBoxContract: Contract | null,

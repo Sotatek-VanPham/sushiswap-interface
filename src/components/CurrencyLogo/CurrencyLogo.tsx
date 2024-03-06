@@ -1,6 +1,6 @@
-import { ChainId, Currency, WNATIVE } from '@sushiswap/core-sdk'
 import useHttpLocations from 'app/hooks/useHttpLocations'
 import { WrappedTokenInfo } from 'app/state/lists/wrappedTokenInfo'
+import { ChainId, Currency, WNATIVE } from 'colend-forking-sdk'
 import React, { FunctionComponent, useMemo } from 'react'
 
 import Logo, { UNKNOWN_ICON } from '../Logo'

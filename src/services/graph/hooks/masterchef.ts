@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { Chef } from 'app/features/onsen/enum'
 import {
   getMasterChefV1Farms,
@@ -15,6 +14,7 @@ import {
   getMiniChefPairAddreses,
 } from 'app/services/graph/fetchers'
 import { useActiveWeb3React } from 'app/services/web3'
+import { ChainId } from 'colend-forking-sdk'
 import concat from 'lodash/concat'
 import { useMemo } from 'react'
 import useSWR, { SWRConfiguration } from 'swr'

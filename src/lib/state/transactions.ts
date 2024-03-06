@@ -1,6 +1,6 @@
 import { TransactionReceipt, TransactionResponse } from '@ethersproject/abstract-provider'
-import { Currency, CurrencyAmount, TradeType } from '@sushiswap/core-sdk'
 import { PrivateTxStatus } from 'app/entities/SushiGuard'
+import { Currency, CurrencyAmount, TradeType } from 'colend-forking-sdk'
 import { atomWithImmer } from 'jotai/immer'
 
 export enum TransactionType {

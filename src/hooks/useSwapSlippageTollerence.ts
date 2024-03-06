@@ -1,7 +1,7 @@
-import { Currency, Percent, Trade, TradeType } from '@sushiswap/core-sdk'
 import { Trade as TridentTrade } from '@sushiswap/trident-sdk'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippageWithDefault } from 'app/state/slippage/slippageSlice'
+import { Currency, Percent, Trade, TradeType } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 const V2_SWAP_DEFAULT_SLIPPAGE = new Percent(50, 10_000) // .50%

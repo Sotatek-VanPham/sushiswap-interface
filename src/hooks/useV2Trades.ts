@@ -1,6 +1,6 @@
-import { Currency, CurrencyAmount, Pair, Trade, TradeType } from '@sushiswap/core-sdk'
 import { BETTER_TRADE_LESS_HOPS_THRESHOLD } from 'app/constants'
 import { isTradeBetter } from 'app/functions/trade'
+import { Currency, CurrencyAmount, Pair, Trade, TradeType } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { useAllCurrencyCombinations } from './useAllCurrencyCombinations'

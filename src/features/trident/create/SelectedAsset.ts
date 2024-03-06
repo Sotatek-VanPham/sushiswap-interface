@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { tryParseAmount } from 'app/functions'
+import { Currency, CurrencyAmount } from 'colend-forking-sdk'
 import { v4 } from 'uuid'
 
 export enum SpendSource {

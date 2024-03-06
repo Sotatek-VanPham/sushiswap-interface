@@ -1,7 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { BENTOBOX_ADDRESS, KASHI_ADDRESS, WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
 import AssetInput from 'app/components/AssetInput'
 import Button from 'app/components/Button'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -16,6 +15,7 @@ import useKashiApproveCallback, { BentoApprovalState } from 'app/hooks/useKashiA
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useNativeCurrencyBalances } from 'app/state/wallet/hooks'
+import { BENTOBOX_ADDRESS, KASHI_ADDRESS, WNATIVE_ADDRESS } from 'colend-forking-sdk'
 import React, { useCallback, useMemo, useState } from 'react'
 
 import KashiMediumRiskLendingPair from '../kashi/KashiMediumRiskLendingPair'

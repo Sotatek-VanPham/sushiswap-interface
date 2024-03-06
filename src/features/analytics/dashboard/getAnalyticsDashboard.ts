@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getBlockDaysAgo, getDayData, getFactory } from 'app/services/graph'
+import { ChainId } from 'colend-forking-sdk'
 
 export type AnalyticsDashboard = Awaited<ReturnType<typeof getAnalyticsDashboard>>
 

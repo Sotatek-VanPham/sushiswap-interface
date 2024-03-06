@@ -1,9 +1,9 @@
-import { Currency, Percent, Price } from '@sushiswap/core-sdk'
 import Typography from 'app/components/Typography'
 import { ONE_BIPS } from 'app/constants'
 import TradePrice from 'app/features/legacy/swap/TradePrice'
 import { classNames } from 'app/functions'
 import { Field } from 'app/state/mint/actions'
+import { Currency, Percent, Price } from 'colend-forking-sdk'
 import React, { FC, useState } from 'react'
 
 interface LiquidityPriceProps {

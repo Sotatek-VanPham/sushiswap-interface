@@ -1,9 +1,9 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CHAIN_KEY } from '@sushiswap/core-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import { TokenType } from 'app/features/miso/context/types'
 import { useActiveWeb3React } from 'app/services/web3'
+import { CHAIN_KEY } from 'colend-forking-sdk'
 import { useCallback, useMemo } from 'react'
 
 const useTokenTemplateMap = () => {

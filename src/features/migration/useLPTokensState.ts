@@ -1,7 +1,7 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { useAllTokens } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
+import { ChainId, CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 import LPToken from './LPToken'

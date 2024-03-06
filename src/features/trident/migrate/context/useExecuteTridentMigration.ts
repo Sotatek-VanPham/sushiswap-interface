@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { approveSLPAction, batchAction } from 'app/features/trident/actions'
 import { handleMigrationError, missingMigrationDependencies } from 'app/features/trident/migrate/context/errorPopups'
 import { selectTridentMigrations, setMigrationTxHash } from 'app/features/trident/migrate/context/migrateSlice'
@@ -17,6 +16,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useTokenBalances } from 'app/state/wallet/hooks'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 
 export const useExecuteTridentMigration = () => {
   const { i18n } = useLingui()

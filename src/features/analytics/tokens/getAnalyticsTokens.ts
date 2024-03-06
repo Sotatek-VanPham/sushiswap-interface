@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getBentoStrategies, getBlockDaysAgo, getNativePrice, getTokens } from 'app/services/graph'
+import { ChainId } from 'colend-forking-sdk'
 
 interface getAnalyticsTokensProps {
   chainId: ChainId

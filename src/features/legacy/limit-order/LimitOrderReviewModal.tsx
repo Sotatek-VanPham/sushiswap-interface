@@ -1,7 +1,6 @@
 import { ArrowDownIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Percent, Price, Trade, TradeType, ZERO } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import ListPanel from 'app/components/ListPanel'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -12,6 +11,7 @@ import { isAddress, shortenAddress } from 'app/functions'
 import { useAppDispatch } from 'app/state/hooks'
 import { setLimitOrderShowReview } from 'app/state/limit-order/actions'
 import { useLimitOrderState } from 'app/state/limit-order/hooks'
+import { Currency, CurrencyAmount, Percent, Price, Trade, TradeType, ZERO } from 'colend-forking-sdk'
 import React, { FC, useCallback, useMemo, useState } from 'react'
 
 interface LimitOrderReviewModal {

@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import {
   dayDatasQuery,
@@ -15,6 +14,7 @@ import {
   tokenSubsetQuery,
   transactionsQuery,
 } from 'app/services/graph/queries'
+import { ChainId } from 'colend-forking-sdk'
 
 import { pager } from './pager'
 

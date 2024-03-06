@@ -1,11 +1,11 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { JSBI } from '@sushiswap/core-sdk'
 import LineGraph from 'app/components/LineGraph'
 import Typography from 'app/components/Typography'
 import AuctionChart from 'app/features/miso/AuctionChart'
 import { useAuctionCommitments } from 'app/features/miso/context/hooks/useAuctionCommitments'
 import { classNames, formatBalance } from 'app/functions'
+import { JSBI } from 'colend-forking-sdk'
 import React, { useEffect, useState } from 'react'
 
 import { Auction } from '../context/Auction'

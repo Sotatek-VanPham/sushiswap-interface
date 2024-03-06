@@ -1,6 +1,6 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getApy } from 'app/functions'
 import { getBlockDaysAgo, getPairs } from 'app/services/graph'
+import { ChainId } from 'colend-forking-sdk'
 
 interface getAnalyticsPairsProps {
   chainId: ChainId

@@ -1,5 +1,14 @@
 import { i18n } from '@lingui/core'
 import { t } from '@lingui/macro'
+import { isAddress, tryParseAmount } from 'app/functions'
+import { useCurrency } from 'app/hooks/Tokens'
+import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
+import useENS from 'app/hooks/useENS'
+import useParsedQueryString from 'app/hooks/useParsedQueryString'
+import { useV2TradeExactIn as useTradeExactIn, useV2TradeExactOut as useTradeExactOut } from 'app/hooks/useV2Trades'
+import { useActiveWeb3React } from 'app/services/web3'
+import { useAppDispatch } from 'app/state/hooks'
+import { useExpertModeManager, useUserSingleHopOnly } from 'app/state/user/hooks'
 import {
   ChainId,
   Currency,
@@ -11,16 +20,7 @@ import {
   TradeType,
   WNATIVE_ADDRESS,
   ZERO,
-} from '@sushiswap/core-sdk'
-import { isAddress, tryParseAmount } from 'app/functions'
-import { useCurrency } from 'app/hooks/Tokens'
-import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
-import useENS from 'app/hooks/useENS'
-import useParsedQueryString from 'app/hooks/useParsedQueryString'
-import { useV2TradeExactIn as useTradeExactIn, useV2TradeExactOut as useTradeExactOut } from 'app/hooks/useV2Trades'
-import { useActiveWeb3React } from 'app/services/web3'
-import { useAppDispatch } from 'app/state/hooks'
-import { useExpertModeManager, useUserSingleHopOnly } from 'app/state/user/hooks'
+} from 'colend-forking-sdk'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { useSelector } from 'react-redux'

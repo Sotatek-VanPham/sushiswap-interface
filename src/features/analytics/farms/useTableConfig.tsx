@@ -1,9 +1,9 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo, CurrencyLogoArray } from 'app/components/CurrencyLogo'
 import Typography from 'app/components/Typography'
 import { formatNumber, formatPercent } from 'app/functions'
 import { useAllTokens } from 'app/hooks/Tokens'
+import { Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { filterForSearchQuery } from './farmTableFilters'

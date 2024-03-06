@@ -1,9 +1,9 @@
-import { CurrencyAmount, Token, USDC } from '@sushiswap/core-sdk'
 import { ConstantProductPool } from '@sushiswap/trident-sdk'
 import { useTotalSupply } from 'app/hooks/useTotalSupply'
 import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalance } from 'app/state/wallet/hooks'
+import { CurrencyAmount, Token, USDC } from 'colend-forking-sdk'
 import { FC, ReactNode } from 'react'
 
 interface _SLPBalanceProps {

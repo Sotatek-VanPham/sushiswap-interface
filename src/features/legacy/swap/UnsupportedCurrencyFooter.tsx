@@ -1,7 +1,6 @@
 import { ExternalLinkIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import ExternalLink from 'app/components/ExternalLink'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
@@ -10,6 +9,7 @@ import { shortenAddress } from 'app/functions'
 import { getExplorerLink } from 'app/functions/explorer'
 import { useUnsupportedTokens } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency } from 'colend-forking-sdk'
 import React, { FC, useState } from 'react'
 
 interface UnsupportedCurrencyFooter {

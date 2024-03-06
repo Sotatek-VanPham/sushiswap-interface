@@ -5,6 +5,12 @@ import { AddressZero } from '@ethersproject/constants'
 import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
+import KashiCooker from 'app/entities/KashiCooker'
+import { toShare, ZERO } from 'app/functions'
+import { useActiveWeb3React } from 'app/services/web3'
+import { useAppSelector } from 'app/state/hooks'
+import { selectSlippage } from 'app/state/slippage/slippageSlice'
+import { useTransactionAdder } from 'app/state/transactions/hooks'
 import {
   Currency,
   CurrencyAmount,
@@ -14,13 +20,7 @@ import {
   SUSHISWAP_MULTISWAPPER_ADDRESS,
   Trade as LegacyTrade,
   TradeType,
-} from '@sushiswap/core-sdk'
-import KashiCooker from 'app/entities/KashiCooker'
-import { toShare, ZERO } from 'app/functions'
-import { useActiveWeb3React } from 'app/services/web3'
-import { useAppSelector } from 'app/state/hooks'
-import { selectSlippage } from 'app/state/slippage/slippageSlice'
-import { useTransactionAdder } from 'app/state/transactions/hooks'
+} from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 import { useKashiMarket } from '..'

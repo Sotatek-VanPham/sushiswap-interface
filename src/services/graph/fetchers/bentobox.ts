@@ -1,4 +1,3 @@
-import { ChainId, CurrencyAmount, JSBI, Token } from '@sushiswap/core-sdk'
 import { aprToApy, toAmountCurrencyAmount } from 'app/functions'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import {
@@ -8,6 +7,7 @@ import {
   bentoUserTokensQuery,
   clonesQuery,
 } from 'app/services/graph/queries/bentobox'
+import { ChainId, CurrencyAmount, JSBI, Token } from 'colend-forking-sdk'
 
 import { pager } from './pager'
 

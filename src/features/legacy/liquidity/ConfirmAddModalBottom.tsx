@@ -1,8 +1,8 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Fraction, Percent } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import { Field } from 'app/state/mint/actions'
+import { Currency, CurrencyAmount, Fraction, Percent } from 'colend-forking-sdk'
 import React from 'react'
 
 export function ConfirmAddModalBottom({

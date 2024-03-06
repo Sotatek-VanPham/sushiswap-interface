@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, JSBI, Percent, ZERO } from '@sushiswap/core-sdk'
 import { CurrencyLogoArray } from 'app/components/CurrencyLogo'
 import GradientDot from 'app/components/GradientDot'
 import Typography from 'app/components/Typography'
@@ -8,6 +7,7 @@ import KashiMediumRiskLendingPair from 'app/features/kashi/KashiMediumRiskLendin
 import { TABLE_TBODY_TD_CLASSNAME, TABLE_TBODY_TR_CLASSNAME } from 'app/features/trident/constants'
 import { classNames, currencyFormatter, formatNumber, formatPercent } from 'app/functions'
 import { useUSDCSubgraphValueWithLoadingIndicator } from 'app/hooks/useUSDCSubgraph'
+import { CurrencyAmount, JSBI, Percent, ZERO } from 'colend-forking-sdk'
 import { useRouter } from 'next/router'
 import React, { FC, memo, useMemo } from 'react'
 

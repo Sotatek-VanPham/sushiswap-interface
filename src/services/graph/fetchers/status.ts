@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
+import { ChainId } from 'colend-forking-sdk'
 import { request } from 'graphql-request'
 
 // @ts-ignore TYPE NEEDS FIXING

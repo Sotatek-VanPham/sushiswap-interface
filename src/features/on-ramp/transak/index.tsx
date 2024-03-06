@@ -1,9 +1,9 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId } from '@sushiswap/core-sdk'
 // @ts-ignore TYPE NEEDS FIXING
 import transakSDK from '@transak/transak-sdk'
 import { useActiveWeb3React } from 'app/services/web3'
+import { ChainId } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 const DEFAULT_NETWORK = {

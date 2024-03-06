@@ -2,15 +2,6 @@ import { Disclosure, Transition } from '@headlessui/react'
 import { ChevronDownIcon, ExternalLinkIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import {
-  Currency,
-  CurrencyAmount,
-  NATIVE,
-  Percent,
-  Token,
-  Trade as LegacyTrade,
-  TradeVersion,
-} from '@sushiswap/core-sdk'
 import { Trade as TridentTrade } from '@sushiswap/trident-sdk'
 import Chip from 'app/components/Chip'
 import Typography from 'app/components/Typography'
@@ -24,6 +15,15 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useSwapState } from 'app/state/swap/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
 import { TradeUnion } from 'app/types'
+import {
+  Currency,
+  CurrencyAmount,
+  NATIVE,
+  Percent,
+  Token,
+  Trade as LegacyTrade,
+  TradeVersion,
+} from 'colend-forking-sdk'
 import Link from 'next/link'
 import React, { FC, Fragment, useMemo, useState } from 'react'
 import { isAddress, toWei } from 'web3-utils'

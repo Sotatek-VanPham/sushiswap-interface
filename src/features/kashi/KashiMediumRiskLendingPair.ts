@@ -1,4 +1,5 @@
 import { toAmount, toShare } from '@sushiswap/bentobox-sdk'
+import { accrue, AccrueInfo, computePairAddress, interestAccrue, takeFee } from '@sushiswap/kashi-sdk'
 import {
   Currency,
   CurrencyAmount,
@@ -10,8 +11,7 @@ import {
   toElastic,
   Token,
   ZERO,
-} from '@sushiswap/core-sdk'
-import { accrue, AccrueInfo, computePairAddress, interestAccrue, takeFee } from '@sushiswap/kashi-sdk'
+} from 'colend-forking-sdk'
 
 import { accrueTotalAssetWithFee } from './functions'
 import { Oracle } from './oracles'

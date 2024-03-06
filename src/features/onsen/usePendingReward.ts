@@ -1,9 +1,9 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { ChainId } from '@sushiswap/core-sdk'
 import { Fraction } from 'app/entities/bignumber'
 import { useCloneRewarderContract, useComplexRewarderContract } from 'app/hooks/useContract'
 import useBlockNumber from 'app/lib/hooks/useBlockNumber'
 import { useActiveWeb3React } from 'app/services/web3/hooks/useActiveWeb3React'
+import { ChainId } from 'colend-forking-sdk'
 import { useEffect, useMemo, useState } from 'react'
 
 import { Chef } from './enum'

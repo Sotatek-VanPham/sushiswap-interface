@@ -1,17 +1,6 @@
 import { Signature } from '@ethersproject/bytes'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import {
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  KASHI_ADDRESS,
-  maximum,
-  TradeType,
-  WNATIVE_ADDRESS,
-  ZERO,
-} from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
 import Button from 'app/components/Button'
 import Typography from 'app/components/Typography'
 import { Warning, Warnings } from 'app/entities/Warnings'
@@ -21,6 +10,17 @@ import { unwrappedToken } from 'app/functions'
 import { useBentoBoxContract } from 'app/hooks'
 import { useBentoOrWalletBalance } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
+import {
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  KASHI_ADDRESS,
+  maximum,
+  TradeType,
+  WNATIVE_ADDRESS,
+  ZERO,
+} from 'colend-forking-sdk'
+import { Trade as LegacyTrade } from 'colend-forking-sdk/dist/entities/Trade'
 import React, { FC, ReactNode, useState } from 'react'
 
 export interface KashiMarketRepayButtonProps {

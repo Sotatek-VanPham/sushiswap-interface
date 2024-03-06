@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Price, ZERO } from '@sushiswap/core-sdk'
 import { PoolState } from '@sushiswap/trident-sdk'
 import { selectBalancesCurrency } from 'app/features/portfolio/portfolioSlice'
 import {
@@ -18,6 +17,7 @@ import { useConstantProductPool } from 'app/hooks/useConstantProductPools'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useBentoMasterContractAllowed } from 'app/state/bentobox/hooks'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
+import { Currency, CurrencyAmount, Price, ZERO } from 'colend-forking-sdk'
 import { useCallback, useEffect, useMemo } from 'react'
 import { useSelector } from 'react-redux'
 

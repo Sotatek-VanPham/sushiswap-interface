@@ -1,7 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, NATIVE, Percent, Price, Token } from '@sushiswap/core-sdk'
 import Form from 'app/components/Form'
 import FormFieldHelperText from 'app/components/Form/FormFieldHelperText'
 import Typography from 'app/components/Typography'
@@ -11,6 +10,7 @@ import { useAuctionedToken } from 'app/features/miso/context/store/createTokenDe
 import { tryParseAmount } from 'app/functions'
 import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, CurrencyAmount, NATIVE, Percent, Price, Token } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 import { useFormContext } from 'react-hook-form'
 

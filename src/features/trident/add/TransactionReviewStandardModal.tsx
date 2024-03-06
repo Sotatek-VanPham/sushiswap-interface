@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import ListPanel from 'app/components/ListPanel'
 import HeadlessUIModal from 'app/components/Modal/HeadlessUIModal'
@@ -11,6 +10,7 @@ import { useAddLiquidityDerivedCurrencyAmounts } from 'app/features/trident/add/
 import { useAddLiquidityExecute } from 'app/features/trident/add/useAddLiquidityExecute'
 import { usePoolContext } from 'app/features/trident/PoolContext'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
+import { CurrencyAmount } from 'colend-forking-sdk'
 import { FC, useCallback } from 'react'
 
 import DepositSubmittedModalContent from './DepositSubmittedModalContent'

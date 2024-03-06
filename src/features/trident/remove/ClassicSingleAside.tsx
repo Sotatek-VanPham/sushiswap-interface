@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE, WNATIVE } from '@sushiswap/core-sdk'
 import Alert from 'app/components/Alert'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Divider from 'app/components/Divider'
@@ -17,6 +16,7 @@ import {
 import { useUSDCValue } from 'app/hooks/useUSDCPrice'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
+import { NATIVE, WNATIVE } from 'colend-forking-sdk'
 import React, { useMemo } from 'react'
 
 import TransactionDetails from './TransactionDetails'

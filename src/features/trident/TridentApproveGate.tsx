@@ -1,13 +1,13 @@
 import { Signature } from '@ethersproject/bytes'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, ZERO } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import { ApprovalState, useApproveCallback } from 'app/hooks/useApproveCallback'
 import useBentoMasterApproveCallback, { BentoApprovalState, BentoPermit } from 'app/hooks/useBentoMasterApproveCallback'
 import { StandardSignatureData, useTridentLiquidityTokenPermit } from 'app/hooks/useERC20Permit'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useWalletModalToggle } from 'app/state/application/hooks'
+import { Currency, CurrencyAmount, ZERO } from 'colend-forking-sdk'
 import React, { FC, memo, ReactNode, useCallback, useEffect, useState } from 'react'
 
 interface TokenApproveButtonProps {

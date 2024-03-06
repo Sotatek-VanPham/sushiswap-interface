@@ -1,4 +1,3 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { e10 } from 'app/functions/math'
 import { ApprovalState, useApproveCallback } from 'app/hooks/useApproveCallback'
 import { BentoPermit } from 'app/hooks/useBentoMasterApproveCallback'
@@ -6,6 +5,7 @@ import { useInariContract } from 'app/hooks/useContract'
 import useSushiPerXSushi from 'app/hooks/useXSushiPerSushi'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useCallback, useMemo, useState } from 'react'
 
 import { useDerivedInariState } from '../hooks'

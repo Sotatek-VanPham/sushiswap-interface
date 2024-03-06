@@ -1,15 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import {
-  ChainId,
-  Currency,
-  CurrencyAmount,
-  JSBI,
-  Pair,
-  Trade as LegacyTrade,
-  TradeType,
-  WNATIVE,
-} from '@sushiswap/core-sdk'
-import {
   ConstantProductPool,
   convertTinesSingleRouteToLegacyRoute,
   findMultiRouteExactIn,
@@ -30,6 +20,16 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch } from 'app/state/hooks'
 import { setRouteInfo } from 'app/state/transactions/actions'
 import { TradeUnion } from 'app/types'
+import {
+  ChainId,
+  Currency,
+  CurrencyAmount,
+  JSBI,
+  Pair,
+  Trade as LegacyTrade,
+  TradeType,
+  WNATIVE,
+} from 'colend-forking-sdk'
 import { useEffect, useMemo, useState } from 'react'
 
 import { useAllCurrencyCombinations } from './useAllCurrencyCombinations'

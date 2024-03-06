@@ -1,10 +1,10 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from '@sushiswap/core-sdk'
 import ERC20_ABI from 'app/constants/abis/erc20.json'
 import { isAddress } from 'app/functions/validate'
 import { useInterfaceMulticall } from 'app/hooks/useContract'
 import { useMultipleContractSingleData, useSingleContractMultipleData } from 'app/lib/hooks/multicall'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, CurrencyAmount, JSBI, NATIVE, Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 /**

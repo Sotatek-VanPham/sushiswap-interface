@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getKashiPairs } from 'app/services/graph/fetchers'
+import { ChainId } from 'colend-forking-sdk'
 import stringify from 'fast-json-stable-stringify'
 import useSWR from 'swr'
 

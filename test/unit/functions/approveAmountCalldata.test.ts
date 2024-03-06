@@ -1,6 +1,6 @@
 import { AddressZero } from '@ethersproject/constants'
-import { ChainId, Currency, CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import approveAmountCalldata, { toHex } from 'app/functions/approveAmountCalldata'
+import { ChainId, Currency, CurrencyAmount, Token } from 'colend-forking-sdk'
 
 describe('approveAmountCalldata functions', () => {
   describe('toHex', () => {

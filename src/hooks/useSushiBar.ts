@@ -1,5 +1,5 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 import { useSushiBarContract } from './useContract'

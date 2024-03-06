@@ -1,7 +1,6 @@
 import { ExclamationIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Percent } from '@sushiswap/core-sdk'
 import { DEFAULT_DEADLINE_FROM_NOW } from 'app/constants'
 import { classNames } from 'app/functions'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
@@ -14,6 +13,7 @@ import {
   slippageSelectors,
 } from 'app/state/slippage/slippageSlice'
 import { useUserTransactionTTL } from 'app/state/user/hooks'
+import { Percent } from 'colend-forking-sdk'
 import React, { FC, useState } from 'react'
 
 import Button from '../Button'

@@ -1,4 +1,3 @@
-import { CurrencyAmount, Percent, ZERO } from '@sushiswap/core-sdk'
 import { ZERO_PERCENT } from 'app/constants'
 import { useAddLiquidityDerivedCurrencyAmounts } from 'app/features/trident/add/useAddLiquidityDerivedState'
 import { usePoolContext } from 'app/features/trident/PoolContext'
@@ -6,6 +5,7 @@ import { getPriceOfNewPool } from 'app/features/trident/utils'
 import { calculateSlippageAmount, toShareCurrencyAmount } from 'app/functions'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
+import { CurrencyAmount, Percent, ZERO } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 export const useAddDetails = () => {

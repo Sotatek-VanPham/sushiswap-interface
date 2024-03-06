@@ -1,7 +1,6 @@
 import { ArrowDownIcon, ArrowUpIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId } from '@sushiswap/core-sdk'
 import { LoadingSpinner } from 'app/components/LoadingSpinner'
 import {
   TABLE_TABLE_CLASSNAME,
@@ -13,6 +12,7 @@ import {
 import { useTridentTransactions } from 'app/services/graph/hooks/pools'
 import { useLegacyTransactions } from 'app/services/graph/hooks/transactions/legacy'
 import { useActiveWeb3React } from 'app/services/web3'
+import { ChainId } from 'colend-forking-sdk'
 import { useRouter } from 'next/router'
 import React, { FC } from 'react'
 // @ts-ignore TYPE NEEDS FIXING

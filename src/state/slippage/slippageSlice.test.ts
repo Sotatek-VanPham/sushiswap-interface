@@ -1,5 +1,5 @@
-import { Percent } from '@sushiswap/core-sdk'
 import store, { AppState } from 'app/state'
+import { Percent } from 'colend-forking-sdk'
 
 import {
   formatSlippageInput,

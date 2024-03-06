@@ -1,11 +1,11 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import ConstantProductPoolArtifact from '@sushiswap/trident/artifacts/contracts/pool/constant-product/ConstantProductPool.sol/ConstantProductPool.json'
 import { computeConstantProductPoolAddress, ConstantProductPool, Fee } from '@sushiswap/trident-sdk'
 import { PoolAtomType } from 'app/features/trident/types'
 import { useConstantProductPoolFactory } from 'app/hooks/useContract'
 import { useMultipleContractSingleData } from 'app/lib/hooks/multicall'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, CurrencyAmount } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 const CONSTANT_PRODUCT_POOL_INTERFACE = new Interface(ConstantProductPoolArtifact.abi)

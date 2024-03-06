@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { DEFAULT_TXN_DISMISS_MS } from 'app/constants'
+import { ChainId } from 'colend-forking-sdk'
 import LibUpdater from 'lib/hooks/transactions/updater'
 import { useCallback, useMemo } from 'react'
 import { useActiveWeb3React } from 'services/web3'

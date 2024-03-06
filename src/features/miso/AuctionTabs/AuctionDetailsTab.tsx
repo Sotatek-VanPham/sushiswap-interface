@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Percent } from '@sushiswap/core-sdk'
 import CopyHelper from 'app/components/AccountDetails/Copy'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Typography from 'app/components/Typography'
@@ -9,6 +8,7 @@ import { useAuctionTokenTemplateId } from 'app/features/miso/context/hooks/useAu
 import useTokenTemplateMap from 'app/features/miso/context/hooks/useTokenTemplateMap'
 import { classNames, shortenAddress } from 'app/functions'
 import { useTotalSupply } from 'app/hooks/useTotalSupply'
+import { Percent } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 interface AuctionDetailsTabStatProps {

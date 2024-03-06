@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Typography from 'app/components/Typography'
 import ChartCard from 'app/features/analytics/ChartCard'
@@ -18,6 +17,7 @@ import {
   useTokens,
   useTwoDayBlock,
 } from 'app/services/graph'
+import { Token } from 'colend-forking-sdk'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'
 import { useMemo } from 'react'

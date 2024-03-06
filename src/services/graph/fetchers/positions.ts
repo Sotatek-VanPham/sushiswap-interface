@@ -1,8 +1,8 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Token } from '@sushiswap/core-sdk'
 import { PoolType } from '@sushiswap/trident-sdk'
 import { fetcher, TridentPoolData } from 'app/services/graph'
 import { getTridentPositionsQuery } from 'app/services/graph/queries'
+import { ChainId, Token } from 'colend-forking-sdk'
 
 interface TridentPositionQueryResult {
   liquidityPositions?: TridentPosition[]

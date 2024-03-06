@@ -1,7 +1,6 @@
 import { ArrowDownIcon } from '@heroicons/react/solid'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ZERO } from '@sushiswap/core-sdk'
 import AssetInput from 'app/components/AssetInput'
 import Button from 'app/components/Button'
 import { WalletIcon } from 'app/components/Icon'
@@ -13,6 +12,7 @@ import { useBentoBox } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useBentoBalanceV2, useBentoShareForAccount } from 'app/state/bentobox/hooks'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
+import { ZERO } from 'colend-forking-sdk'
 import React, { FC, useCallback, useState } from 'react'
 
 interface WithdrawViewProps {

@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, minimum } from '@sushiswap/core-sdk'
 import Typography from 'app/components/Typography'
 import {
   KashiMarketCurrentLentPosition,
@@ -10,6 +9,7 @@ import {
 } from 'app/features/kashi/KashiMarket'
 import SwapAssetPanel from 'app/features/trident/swap/SwapAssetPanel'
 import { tryParseAmount, unwrappedToken } from 'app/functions'
+import { CurrencyAmount, minimum } from 'colend-forking-sdk'
 import React, { FC, useMemo, useState } from 'react'
 
 import { KashiMarketLentDetailsView } from '../KashiMarketLentDetailsView'

@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { useBentoStrategies, useNativePrice, useOneDayBlock, useOneWeekBlock, useTokens } from 'app/services/graph'
+import { ChainId } from 'colend-forking-sdk'
 import { useEffect, useMemo, useState } from 'react'
 
 export default function useTokensAnalytics({ chainId = ChainId.ETHEREUM }) {

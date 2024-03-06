@@ -1,11 +1,11 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Percent } from '@sushiswap/core-sdk'
 import GradientDot from 'app/components/GradientDot'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Typography from 'app/components/Typography'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket/KashiMarketContext'
 import { classNames, unwrappedToken } from 'app/functions'
+import { CurrencyAmount, Percent } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 interface KashiMarketCurrentPosition {

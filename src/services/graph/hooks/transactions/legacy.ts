@@ -1,7 +1,7 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { Transactions } from 'app/features/transactions/types'
 import { formatNumber } from 'app/functions'
 import { getTransactions } from 'app/services/graph/fetchers'
+import { ChainId } from 'colend-forking-sdk'
 import stringify from 'fast-json-stable-stringify'
 import { useMemo } from 'react'
 import useSWR from 'swr'

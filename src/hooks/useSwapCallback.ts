@@ -8,17 +8,6 @@ import { arrayify, DataOptions, hexlify, Signature, SignatureLike, splitSignatur
 import { AddressZero } from '@ethersproject/constants'
 import { t } from '@lingui/macro'
 import {
-  ChainId,
-  Currency,
-  CurrencyAmount,
-  Percent,
-  Router as LegacyRouter,
-  SwapParameters,
-  toHex,
-  Trade as LegacyTrade,
-  TradeType,
-} from '@sushiswap/core-sdk'
-import {
   ComplexPathParams,
   ExactInputParams,
   ExactInputSingleParams,
@@ -48,6 +37,17 @@ import { setSushiRelayChallenge } from 'app/state/swap/actions'
 import { useSwapState } from 'app/state/swap/hooks'
 import { TransactionResponseLight, useTransactionAdder } from 'app/state/transactions/hooks'
 import { useExpertModeManager } from 'app/state/user/hooks'
+import {
+  ChainId,
+  Currency,
+  CurrencyAmount,
+  Percent,
+  Router as LegacyRouter,
+  SwapParameters,
+  toHex,
+  Trade as LegacyTrade,
+  TradeType,
+} from 'colend-forking-sdk'
 import { fetchJsonRpc } from 'lib/jsonrpc'
 import { useMemo } from 'react'
 

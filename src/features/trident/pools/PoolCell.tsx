@@ -1,5 +1,5 @@
-import { Token } from '@sushiswap/core-sdk'
 import { CurrencyLogoArray } from 'app/components/CurrencyLogo'
+import { Token } from 'colend-forking-sdk'
 import Image from 'next/image'
 import React, { FC } from 'react'
 

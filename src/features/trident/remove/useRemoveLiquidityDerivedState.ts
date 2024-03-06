@@ -1,12 +1,12 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Percent, Token, ZERO } from '@sushiswap/core-sdk'
 import { PoolState } from '@sushiswap/trident-sdk'
 import { usePoolContext } from 'app/features/trident/PoolContext'
 import { selectRemovePercentageAmount, selectRemoveZapCurrency } from 'app/features/trident/remove/removeSlice'
 import { toAmountCurrencyAmount } from 'app/functions'
 import { useCurrency } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, CurrencyAmount, Percent, Token, ZERO } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
 

@@ -1,6 +1,5 @@
 import { getAddress } from '@ethersproject/address'
 import { AddressZero } from '@ethersproject/constants'
-import { WNATIVE_ADDRESS } from '@sushiswap/core-sdk'
 import {
   Action,
   BatchAction,
@@ -10,6 +9,7 @@ import {
   TransferAssetAction,
   WithdrawAction,
 } from 'app/hooks/useBentoBox/types'
+import { WNATIVE_ADDRESS } from 'colend-forking-sdk'
 import { BigNumber } from 'ethers'
 
 export const depositAction: Action<DepositActionPayload> = ({

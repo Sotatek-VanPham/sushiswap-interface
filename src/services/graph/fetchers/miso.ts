@@ -1,6 +1,6 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { pager } from 'app/services/graph'
 import { misoCommitmentsQuery } from 'app/services/graph/queries/miso'
+import { ChainId } from 'colend-forking-sdk'
 
 import { GRAPH_HOST } from '../constants'
 

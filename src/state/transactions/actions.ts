@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit'
-import { ChainId } from '@sushiswap/core-sdk'
 import { PrivateTxStatus } from 'app/entities/SushiGuard'
+import { ChainId } from 'colend-forking-sdk'
 
 export interface SerializableTransactionReceipt {
   to: string

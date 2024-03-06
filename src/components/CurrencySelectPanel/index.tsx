@@ -1,9 +1,9 @@
 import { ChevronDownIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency } from '@sushiswap/core-sdk'
 import selectCoinAnimation from 'app/animation/select-coin.json'
 import CurrencySearchModal from 'app/modals/SearchModal/CurrencySearchModal'
+import { Currency } from 'colend-forking-sdk'
 import Lottie from 'lottie-react'
 import React, { useCallback, useState } from 'react'
 

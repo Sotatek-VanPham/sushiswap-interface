@@ -1,11 +1,11 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, ZERO } from '@sushiswap/core-sdk'
 import Form, { DEFAULT_FORM_FIELD_CLASSNAMES } from 'app/components/Form'
 import Typography from 'app/components/Typography'
 import { isAddressValidator, pipeline } from 'app/features/miso/AuctionAdminForm/validators'
 import { useAuctionPointListPoints } from 'app/features/miso/context/hooks/useAuctionPointList'
 import { classNames, isAddress } from 'app/functions'
+import { Currency, ZERO } from 'colend-forking-sdk'
 import React, { FC, useState } from 'react'
 
 interface WhitelistCheckerProps {

@@ -1,15 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import {
-  ChainId,
-  Currency,
-  CurrencyAmount,
-  Percent,
-  SUSHI_ADDRESS,
-  Trade as V2Trade,
-  TradeType,
-  WNATIVE_ADDRESS,
-} from '@sushiswap/core-sdk'
 import { currencyId } from 'app/functions'
 import { tryParseAmount } from 'app/functions/parse'
 import { isAddress } from 'app/functions/validate'
@@ -23,6 +13,16 @@ import { AppState } from 'app/state'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useExpertModeManager, useUserSingleHopOnly } from 'app/state/user/hooks'
 import { useCurrencyBalances } from 'app/state/wallet/hooks'
+import {
+  ChainId,
+  Currency,
+  CurrencyAmount,
+  Percent,
+  SUSHI_ADDRESS,
+  Trade as V2Trade,
+  TradeType,
+  WNATIVE_ADDRESS,
+} from 'colend-forking-sdk'
 import { useRouter } from 'next/router'
 import { ParsedQs } from 'qs'
 import { useCallback, useEffect, useState } from 'react'

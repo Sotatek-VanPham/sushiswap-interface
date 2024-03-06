@@ -1,8 +1,8 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { useInariContract } from 'app/hooks/useContract'
 import { useERC20Permit } from 'app/hooks/useERC20Permit'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 import { useDerivedInariState } from '../hooks'

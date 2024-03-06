@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import { getTokenSubset } from 'app/services/graph/fetchers/exchange'
 import {
@@ -18,6 +17,7 @@ import {
   poolsQuery,
   poolsV2Query,
 } from 'app/services/graph/queries'
+import { ChainId } from 'colend-forking-sdk'
 import { request } from 'graphql-request'
 
 export const MINICHEF = {

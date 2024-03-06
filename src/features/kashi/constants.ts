@@ -1,4 +1,4 @@
-import { Fraction, Percent } from '@sushiswap/core-sdk'
+import { Fraction, Percent } from 'colend-forking-sdk'
 
 export const LTV = new Fraction(75, 100)
 export const DEFAULT_BORROW_SLIPPAGE_TOLERANCE = new Percent(50, 10_000)

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Price } from '@sushiswap/core-sdk'
+import { Currency, CurrencyAmount, Price } from 'colend-forking-sdk'
 
 export const getPriceOfNewPool = (
   amounts: (CurrencyAmount<Currency> | undefined)[]

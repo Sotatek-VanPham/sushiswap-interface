@@ -1,11 +1,11 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, Price, Trade, TradeType } from '@sushiswap/core-sdk'
 import Input from 'app/components/Input'
 import Typography from 'app/components/Typography'
 import { useAppDispatch } from 'app/state/hooks'
 import { LimitPrice, setLimitOrderInvertState, setLimitPrice } from 'app/state/limit-order/actions'
 import useLimitOrderDerivedCurrencies, { useLimitOrderState } from 'app/state/limit-order/hooks'
+import { Currency, Price, Trade, TradeType } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 interface LimitPriceInputPanel {

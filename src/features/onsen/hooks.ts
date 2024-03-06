@@ -1,5 +1,8 @@
 import { Zero } from '@ethersproject/constants'
 import { Contract } from '@ethersproject/contracts'
+import { useMasterChefContract, useMasterChefV2Contract, useMiniChefContract } from 'app/hooks/useContract'
+import { NEVER_RELOAD, useSingleCallResult, useSingleContractMultipleData } from 'app/lib/hooks/multicall'
+import { useActiveWeb3React } from 'app/services/web3'
 import {
   CurrencyAmount,
   JSBI,
@@ -7,10 +10,7 @@ import {
   MASTERCHEF_V2_ADDRESS,
   MINICHEF_ADDRESS,
   SUSHI,
-} from '@sushiswap/core-sdk'
-import { useMasterChefContract, useMasterChefV2Contract, useMiniChefContract } from 'app/hooks/useContract'
-import { NEVER_RELOAD, useSingleCallResult, useSingleContractMultipleData } from 'app/lib/hooks/multicall'
-import { useActiveWeb3React } from 'app/services/web3'
+} from 'colend-forking-sdk'
 import concat from 'lodash/concat'
 import zip from 'lodash/zip'
 import { useCallback, useMemo } from 'react'

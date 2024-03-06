@@ -1,11 +1,11 @@
 import { I18n } from '@lingui/core'
 import { t } from '@lingui/macro'
-import { CurrencyAmount, Percent } from '@sushiswap/core-sdk'
 import { CurrencyLogoArray } from 'app/components/CurrencyLogo'
 import Typography from 'app/components/Typography'
 import { KashiMarketActions } from 'app/features/kashi/KashiMarket'
 import { TABLE_TBODY_TD_CLASSNAME, TABLE_TBODY_TR_CLASSNAME } from 'app/features/trident/constants'
 import { classNames, formatNumber } from 'app/functions'
+import { CurrencyAmount, Percent } from 'colend-forking-sdk'
 import Link from 'next/link'
 import React, { FC, memo, useMemo } from 'react'
 

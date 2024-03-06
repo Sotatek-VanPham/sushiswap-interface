@@ -1,8 +1,8 @@
-import { Pair } from '@sushiswap/core-sdk'
 import { useV2Pairs } from 'app/hooks/useV2Pairs'
 import { useActiveWeb3React } from 'app/services/web3'
 import { toV2LiquidityToken, useTrackedTokenPairs } from 'app/state/user/hooks'
 import { useTokenBalancesWithLoadingIndicator } from 'app/state/wallet/hooks'
+import { Pair } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 interface V2PairsWithLiquidity {

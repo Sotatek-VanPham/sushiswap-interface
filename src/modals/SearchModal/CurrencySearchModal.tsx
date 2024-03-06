@@ -1,7 +1,7 @@
-import { Currency, Token } from '@sushiswap/core-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import { HeadlessUiModal } from 'app/components/Modal'
 import usePrevious from 'app/hooks/usePrevious'
+import { Currency, Token } from 'colend-forking-sdk'
 import React, { createContext, FC, ReactNode, useCallback, useContext, useMemo, useState } from 'react'
 
 import CurrencyModalView from './CurrencyModalView'

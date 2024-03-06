@@ -1,11 +1,11 @@
-import { Currency, CurrencyAmount, JSBI, Percent, TradeType, ZERO } from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
 import { LTV, PADDING } from 'app/features/kashi/constants'
 import KashiMediumRiskLendingPair from 'app/features/kashi/KashiMediumRiskLendingPair'
 import { computeRealizedLPFeePercent } from 'app/functions'
 import { useV2TradeExactIn } from 'app/hooks/useV2Trades'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
+import { Currency, CurrencyAmount, JSBI, Percent, TradeType, ZERO } from 'colend-forking-sdk'
+import { Trade as LegacyTrade } from 'colend-forking-sdk/dist/entities/Trade'
 import { useMemo } from 'react'
 
 interface UseMaxBorrowPayload {

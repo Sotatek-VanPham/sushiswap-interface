@@ -1,10 +1,10 @@
-import { Currency, CurrencyAmount, Price, Trade as LegacyTrade, TradeType, ZERO } from '@sushiswap/core-sdk'
 import { LTV } from 'app/features/kashi/constants'
 import { useKashiMarket } from 'app/features/kashi/KashiMarket'
 import { unwrappedToken } from 'app/functions'
 import { useUSDCPrice } from 'app/hooks'
 import { useAppSelector } from 'app/state/hooks'
 import { selectSlippage } from 'app/state/slippage/slippageSlice'
+import { Currency, CurrencyAmount, Price, Trade as LegacyTrade, TradeType, ZERO } from 'colend-forking-sdk'
 
 interface Payload {
   borrowAmount?: CurrencyAmount<Currency>

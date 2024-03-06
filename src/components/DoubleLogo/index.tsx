@@ -1,5 +1,5 @@
-import { Currency } from '@sushiswap/core-sdk'
 import { classNames } from 'app/functions'
+import { Currency } from 'colend-forking-sdk'
 import React from 'react'
 
 import { CurrencyLogo } from '../CurrencyLogo'

@@ -1,6 +1,6 @@
-import { Token } from '@sushiswap/core-sdk'
 import { tryParseAmount } from 'app/functions/parse'
 import { useAppSelector } from 'app/state/hooks'
+import { Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import useStakeSushiToAaveStrategy from './strategies/useStakeSushiToAaveStrategy'

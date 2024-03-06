@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import QuestionHelper from 'app/components/QuestionHelper'
@@ -9,6 +8,7 @@ import { COMMON_BASES } from 'app/config/routing'
 import { currencyId } from 'app/functions'
 import { useCurrencyModalContext } from 'app/modals/SearchModal/CurrencySearchModal'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 const CommonBases: FC = () => {

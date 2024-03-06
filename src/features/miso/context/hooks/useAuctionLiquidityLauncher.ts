@@ -1,6 +1,5 @@
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { AddressZero } from '@ethersproject/constants'
-import { CHAIN_KEY } from '@sushiswap/core-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import { useLiquidityLauncherTemplateMap } from 'app/features/miso/context/hooks/useLiquidityLauncherTemplateMap'
 import { LiquidityLauncherTemplate } from 'app/features/miso/context/types'
@@ -8,6 +7,7 @@ import { LiquidityLauncherFormInputFormatted } from 'app/features/miso/Liquidity
 import { useContract, useFactoryContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { CHAIN_KEY } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 export const useAuctionLiquidityLauncher = () => {

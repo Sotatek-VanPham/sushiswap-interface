@@ -1,11 +1,11 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Fraction } from '@sushiswap/core-sdk'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
 import Typography from 'app/components/Typography'
 import { usePoolContext } from 'app/features/trident/PoolContext'
 import { useTridentPoolContract } from 'app/hooks'
 import { useSingleCallResult } from 'app/lib/hooks/multicall'
+import { Fraction } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 const TransactionDetailsExplanationModal: FC = ({ children }) => {

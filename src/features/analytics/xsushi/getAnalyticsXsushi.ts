@@ -1,6 +1,6 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { XSUSHI } from 'app/config/tokens/ethereum'
 import { getBar, getBarHistory, getBlockDaysAgo, getNativePrice, getTokens } from 'app/services/graph'
+import { ChainId } from 'colend-forking-sdk'
 import { addYears, getUnixTime } from 'date-fns'
 
 export type AnalyticsXsushi = Awaited<ReturnType<typeof getAnalyticsXsushi>>

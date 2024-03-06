@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@uniswap/token-lists'
 import { ARBITRUM_LIST, OPTIMISM_LIST, UNSUPPORTED_LIST_URLS } from 'app/config/token-lists'
 import { useFetchListCallback } from 'app/hooks/useFetchListCallback'
@@ -6,6 +5,7 @@ import useInterval from 'app/hooks/useInterval'
 import useIsWindowVisible from 'app/hooks/useIsWindowVisible'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch } from 'app/state/hooks'
+import { ChainId } from 'colend-forking-sdk'
 import { useCallback, useEffect } from 'react'
 
 import { acceptListUpdate, enableList } from './actions'

@@ -2,7 +2,6 @@ import { Signature } from '@ethersproject/bytes'
 import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, toHex } from '@sushiswap/core-sdk'
 import { approveMasterContractAction, batchAction } from 'app/features/trident/actions'
 import { PoolCreationActionProps, poolCreationActions } from 'app/features/trident/create/actions'
 import {
@@ -18,6 +17,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { USER_REJECTED_TX } from 'app/services/web3/WalletError'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { Currency, CurrencyAmount, toHex } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 type ExecutePayload = {

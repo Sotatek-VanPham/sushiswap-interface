@@ -1,7 +1,7 @@
-import { Currency, Price, ZERO } from '@sushiswap/core-sdk'
 import Typography from 'app/components/Typography'
 import { classNames } from 'app/functions'
 import { useUSDCPrice } from 'app/hooks'
+import { Currency, Price, ZERO } from 'colend-forking-sdk'
 import React, { FC, useCallback } from 'react'
 
 interface TradePriceProps {

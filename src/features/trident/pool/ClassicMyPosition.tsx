@@ -1,10 +1,10 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ZERO } from '@sushiswap/core-sdk'
 import ListPanel from 'app/components/ListPanel'
 import { usePoolContext } from 'app/features/trident/PoolContext'
 import SumUSDCValues from 'app/features/trident/SumUSDCValues'
 import { formatPercent } from 'app/functions'
+import { ZERO } from 'colend-forking-sdk'
 import { FC } from 'react'
 
 const ClassicMyPosition: FC = () => {

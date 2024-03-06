@@ -1,5 +1,4 @@
 import { nanoid } from '@reduxjs/toolkit'
-import { ChainId } from '@sushiswap/core-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import { resolveENSContentHash } from 'app/functions/ens'
 import { getNetworkLibrary } from 'app/functions/getNetworkLibrary'
@@ -7,6 +6,7 @@ import { getTokenList } from 'app/functions/list'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch } from 'app/state/hooks'
 import { fetchTokenList } from 'app/state/lists/actions'
+import { ChainId } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 export function useFetchListCallback(): (listUrl: string, sendDispatch?: boolean) => Promise<TokenList> {

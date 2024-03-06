@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import {
   approveMasterContractAction,
   approveSLPAction,
@@ -22,6 +21,7 @@ import { useActiveWeb3React } from 'app/services/web3'
 import { USER_REJECTED_TX } from 'app/services/web3/WalletError'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { Currency, CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useCallback } from 'react'
 
 export const useRemoveLiquiditySingleExecute = () => {

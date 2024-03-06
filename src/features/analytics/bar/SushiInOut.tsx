@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import ExternalLink from 'app/components/ExternalLink'
 import Typography from 'app/components/Typography'
 import {
@@ -7,6 +6,7 @@ import {
   TABLE_WRAPPER_DIV_CLASSNAME,
 } from 'app/features/trident/constants'
 import { classNames, formatDateAgo, formatNumber, formatNumberScale, getExplorerLink } from 'app/functions'
+import { ChainId } from 'colend-forking-sdk'
 import { useRouter } from 'next/router'
 
 interface SushiInOutProps {

@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, NATIVE, WNATIVE, ZERO } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import ListPanel from 'app/components/ListPanel'
 import HeadlessUIModal from 'app/components/Modal/HeadlessUIModal'
@@ -11,6 +10,7 @@ import { useRemoveLiquidityDerivedSLPAmount } from 'app/features/trident/remove/
 import { useRemoveLiquidityExecute } from 'app/features/trident/remove/useRemoveLiquidityExecute'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
+import { CurrencyAmount, NATIVE, WNATIVE, ZERO } from 'colend-forking-sdk'
 import React, { FC, useCallback } from 'react'
 
 import WithdrawalSubmittedModalContent from './WithdrawalSubmittedModalContent'

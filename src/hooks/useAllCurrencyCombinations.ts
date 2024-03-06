@@ -1,5 +1,5 @@
-import { Currency, Token } from '@sushiswap/core-sdk'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, Token } from 'colend-forking-sdk'
 import flatMap from 'lodash/flatMap'
 import { useMemo } from 'react'
 

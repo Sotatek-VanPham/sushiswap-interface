@@ -1,7 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, ZERO } from '@sushiswap/core-sdk'
 import Chip from 'app/components/Chip'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import { RestrictedIcon } from 'app/components/Icon'
@@ -14,6 +13,7 @@ import { AuctionTitleByTemplateId, MisoAbiByTemplateId } from 'app/features/miso
 import { useContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { Currency, CurrencyAmount, ZERO } from 'colend-forking-sdk'
 import React, { FC, useCallback, useState } from 'react'
 
 import { Auction } from './context/Auction'

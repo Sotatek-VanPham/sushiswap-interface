@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getAverageBlockTime, getBlock, getMassBlocks } from 'app/services/graph/fetchers'
+import { ChainId } from 'colend-forking-sdk'
 import {
   addSeconds,
   getUnixTime,

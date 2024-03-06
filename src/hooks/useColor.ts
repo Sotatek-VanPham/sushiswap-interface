@@ -1,5 +1,5 @@
-import { ChainId, Token } from '@sushiswap/core-sdk'
 import { uriToHttp } from 'app/functions/convert'
+import { ChainId, Token } from 'colend-forking-sdk'
 import Vibrant from 'node-vibrant'
 import { shade } from 'polished'
 import { useLayoutEffect, useState } from 'react'

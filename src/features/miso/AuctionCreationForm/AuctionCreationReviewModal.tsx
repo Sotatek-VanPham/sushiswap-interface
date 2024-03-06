@@ -1,7 +1,6 @@
 import { parseUnits } from '@ethersproject/units'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, JSBI } from '@sushiswap/core-sdk'
 import LoadingCircle from 'app/animation/loading-circle.json'
 import HeadlessUIModal from 'app/components/Modal/HeadlessUIModal'
 import Typography from 'app/components/Typography'
@@ -12,6 +11,7 @@ import useAuctionTemplateMap from 'app/features/miso/context/hooks/useAuctionTem
 import { AuctionTemplate } from 'app/features/miso/context/types'
 import { getExplorerLink, shortenString } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
+import { CurrencyAmount, JSBI } from 'colend-forking-sdk'
 import Lottie from 'lottie-react'
 import React, { FC, useCallback, useEffect, useState } from 'react'
 

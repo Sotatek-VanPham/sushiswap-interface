@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import ListPanel from 'app/components/ListPanel'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -9,6 +8,7 @@ import Typography from 'app/components/Typography'
 import { useFarmListItemDetailsModal } from 'app/features/onsen/FarmListItemDetails'
 import { setOnsenModalOpen } from 'app/features/onsen/onsenSlice'
 import { useAppDispatch } from 'app/state/hooks'
+import { Currency, CurrencyAmount, Token } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 interface PoolRemoveLiquidityReviewContentProps {

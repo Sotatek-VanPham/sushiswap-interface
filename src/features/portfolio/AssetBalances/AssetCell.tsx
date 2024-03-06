@@ -1,8 +1,8 @@
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Typography from 'app/components/Typography'
 import { currencyFormatter } from 'app/functions'
 import { useUSDCPriceWithLoadingIndicator } from 'app/hooks/useUSDCPrice'
+import { Currency, CurrencyAmount } from 'colend-forking-sdk'
 import React from 'react'
 
 export const AssetCell = (amount: CurrencyAmount<Currency>, balancesLoading?: boolean) => {

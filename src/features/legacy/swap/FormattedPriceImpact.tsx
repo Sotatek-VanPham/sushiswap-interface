@@ -1,5 +1,5 @@
-import { Percent } from '@sushiswap/core-sdk'
 import { warningSeverity } from 'app/functions/prices'
+import { Percent } from 'colend-forking-sdk'
 import React from 'react'
 
 const SEVERITY = {

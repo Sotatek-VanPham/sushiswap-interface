@@ -1,4 +1,3 @@
-import { Token } from '@sushiswap/core-sdk'
 import { PoolType } from '@sushiswap/trident-sdk'
 import { getApy } from 'app/functions'
 import {
@@ -9,6 +8,7 @@ import {
   useTridentLiquidityPositions,
 } from 'app/services/graph'
 import { useTridentPools } from 'app/services/graph/hooks/pools'
+import { Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 interface PositionBalances {

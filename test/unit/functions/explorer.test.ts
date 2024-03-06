@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { getExplorerLink } from 'app/functions/explorer'
+import { ChainId } from 'colend-forking-sdk'
 
 describe('utils', () => {
   describe('#getExplorerLink', () => {

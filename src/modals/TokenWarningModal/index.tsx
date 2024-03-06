@@ -1,5 +1,5 @@
-import { Token } from '@sushiswap/core-sdk'
 import HeadlessUiModal from 'app/components/Modal/HeadlessUIModal'
+import { Token } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 import { ImportToken } from '../SearchModal/ImportToken'

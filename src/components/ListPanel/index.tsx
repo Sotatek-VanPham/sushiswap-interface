@@ -1,6 +1,6 @@
-import { Currency, CurrencyAmount, ZERO } from '@sushiswap/core-sdk'
 import { classNames, formatNumber } from 'app/functions'
 import { useUSDCValueSubgraph } from 'app/hooks/useUSDCSubgraph'
+import { Currency, CurrencyAmount, ZERO } from 'colend-forking-sdk'
 import React, { FC, ReactNode } from 'react'
 
 import Chip from '../Chip'

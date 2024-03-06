@@ -1,5 +1,4 @@
 import { AddressZero } from '@ethersproject/constants'
-import { Token } from '@sushiswap/core-sdk'
 import { useAuctionDocuments } from 'app/features/miso/context/hooks/useAuctionDocuments'
 import { useAuctionEnded } from 'app/features/miso/context/hooks/useAuctionEnded'
 import {
@@ -14,6 +13,7 @@ import { AuctionStatus } from 'app/features/miso/context/types'
 import { getNativeOrToken, getStatusByTimestamp } from 'app/features/miso/context/utils'
 import useCurrentBlockTimestamp from 'app/hooks/useCurrentBlockTimestamp'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { Auction } from '../Auction'

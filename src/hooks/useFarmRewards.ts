@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Currency, NATIVE, SUSHI, Token } from '@sushiswap/core-sdk'
 import * as XDAI_TOKENS from 'app/config/tokens/xdai'
 import { Feature } from 'app/enums'
 import { Chef, PairType } from 'app/features/onsen/enum'
@@ -28,6 +27,7 @@ import {
   useSushiPrice,
 } from 'app/services/graph'
 import { useGetAllTridentPools } from 'app/services/graph/hooks/pools'
+import { ChainId, Currency, NATIVE, SUSHI, Token } from 'colend-forking-sdk'
 import { useCallback, useMemo } from 'react'
 
 import { useAllTokens } from './Tokens'

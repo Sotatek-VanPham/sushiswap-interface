@@ -3,12 +3,12 @@ import { Menu, Transition } from '@headlessui/react'
 import { DotsVerticalIcon } from '@heroicons/react/solid'
 import { i18n } from '@lingui/core'
 import { t } from '@lingui/macro'
-import { JSBI, maximum, Percent, ZERO } from '@sushiswap/core-sdk'
 import { ACTION_ACCRUE, KashiMediumRiskLendingPair } from '@sushiswap/kashi-sdk'
 import QuestionHelper from 'app/components/QuestionHelper'
 import Typography from 'app/components/Typography'
 import { KashiCooker } from 'app/entities'
 import useKashiApproveCallback from 'app/hooks/useKashiApproveCallback'
+import { JSBI, maximum, Percent, ZERO } from 'colend-forking-sdk'
 import React, { FC, Fragment, useCallback, useMemo } from 'react'
 
 interface KashiMarketActions {

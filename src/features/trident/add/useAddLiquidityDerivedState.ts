@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, ZERO } from '@sushiswap/core-sdk'
 import { PoolState } from '@sushiswap/trident-sdk'
 import {
   selectAddNormalInput,
@@ -13,6 +12,7 @@ import { tryParseAmount } from 'app/functions'
 import { useBentoOrWalletBalances } from 'app/hooks/useBentoOrWalletBalance'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useAppDispatch, useAppSelector } from 'app/state/hooks'
+import { Currency, CurrencyAmount, ZERO } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'
 

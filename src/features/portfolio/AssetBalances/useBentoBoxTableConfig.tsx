@@ -1,8 +1,8 @@
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { AssetCell } from 'app/features/portfolio/AssetBalances/AssetCell'
 import { Assets } from 'app/features/portfolio/AssetBalances/types'
 import { ValueCell } from 'app/features/portfolio/AssetBalances/ValueCell'
 import { formatPercent } from 'app/functions'
+import { Currency, CurrencyAmount } from 'colend-forking-sdk'
 import React, { useMemo } from 'react'
 
 export type CellProps = { cell: { value: CurrencyAmount<Currency> } }

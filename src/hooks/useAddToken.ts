@@ -1,6 +1,6 @@
-import { Currency, Token } from '@sushiswap/core-sdk'
 import { getCurrencyLogoUrls } from 'app/components/CurrencyLogo/CurrencyLogo'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, Token } from 'colend-forking-sdk'
 import { useCallback, useState } from 'react'
 
 export default function useAddToken(currencyToAdd: Currency | undefined): {

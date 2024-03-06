@@ -1,5 +1,5 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { formatDateAgo, getExplorerLink } from 'app/functions'
+import { ChainId } from 'colend-forking-sdk'
 import React, { useMemo } from 'react'
 
 import ExternalLink from '../../components/ExternalLink'

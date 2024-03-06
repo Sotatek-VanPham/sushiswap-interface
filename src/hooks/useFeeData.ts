@@ -1,8 +1,8 @@
 import { FeeData } from '@ethersproject/abstract-provider'
-import { ChainId } from '@sushiswap/core-sdk'
 import { EIP_1559_ACTIVATION_BLOCK } from 'app/constants'
 import useBlockNumber from 'app/lib/hooks/useBlockNumber'
 import { useActiveWeb3React } from 'app/services/web3'
+import { ChainId } from 'colend-forking-sdk'
 import { useEffect, useState } from 'react'
 
 interface FeeDataExtend extends FeeData {

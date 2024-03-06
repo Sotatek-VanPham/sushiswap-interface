@@ -1,11 +1,11 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount, JSBI } from '@sushiswap/core-sdk'
 import HybridPoolArtifact from '@sushiswap/trident/artifacts/contracts/pool/hybrid/HybridPool.sol/HybridPool.json'
 import { computeHybridPoolAddress, Fee, HybridPool } from '@sushiswap/trident-sdk'
 import { PoolAtomType } from 'app/features/trident/types'
 import { useStablePoolFactory } from 'app/hooks/useContract'
 import { useMultipleContractSingleData } from 'app/lib/hooks/multicall'
 import { useActiveWeb3React } from 'app/services/web3'
+import { Currency, CurrencyAmount, JSBI } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { useMasterDeployerContract } from '.'

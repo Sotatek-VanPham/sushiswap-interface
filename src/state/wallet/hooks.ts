@@ -1,4 +1,4 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useTokenBalances, useTokenBalancesWithLoadingIndicator } from 'lib/hooks/useCurrencyBalance'
 import { useMemo } from 'react'
 import { useActiveWeb3React } from 'services/web3'

@@ -1,5 +1,4 @@
 import { getAddress } from '@ethersproject/address'
-import { ChainId, Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import DoubleCurrencyLogo from 'app/components/DoubleLogo'
 import Typography from 'app/components/Typography'
@@ -9,6 +8,7 @@ import useFarmRewardHistories from 'app/features/analytics/hooks/useFarmRewardHi
 import useFarmRewardsWithUsers from 'app/features/analytics/hooks/useFarmRewardsWithUsers'
 import { formatNumber, formatPercent } from 'app/functions'
 import { TridentBody, TridentHeader } from 'app/layouts/Trident'
+import { ChainId, Token } from 'colend-forking-sdk'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { NextSeo } from 'next-seo'

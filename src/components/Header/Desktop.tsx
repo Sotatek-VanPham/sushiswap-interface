@@ -1,4 +1,3 @@
-import { NATIVE } from '@sushiswap/core-sdk'
 import Container from 'app/components/Container'
 import { NAV_CLASS } from 'app/components/Header/styles'
 import useMenu from 'app/components/Header/useMenu'
@@ -7,6 +6,7 @@ import Web3Status from 'app/components/Web3Status'
 import useIsCoinbaseWallet from 'app/hooks/useIsCoinbaseWallet'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useNativeCurrencyBalances } from 'app/state/wallet/hooks'
+import { NATIVE } from 'colend-forking-sdk'
 import Image from 'next/image'
 import React, { FC } from 'react'
 

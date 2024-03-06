@@ -1,5 +1,5 @@
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { useSingleCallResult } from 'app/lib/hooks/multicall'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from './useContract'

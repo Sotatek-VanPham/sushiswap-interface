@@ -1,6 +1,6 @@
-import { Currency, Price, Token } from '@sushiswap/core-sdk'
 import { formatNumber } from 'app/functions'
 import useInterval from 'app/hooks/useInterval'
+import { Currency, Price, Token } from 'colend-forking-sdk'
 import { FC, useState } from 'react'
 
 import { Auction } from '../context/Auction'

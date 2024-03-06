@@ -1,12 +1,12 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { NATIVE } from '@sushiswap/core-sdk'
 import CloseIcon from 'app/components/CloseIcon'
 import Typography from 'app/components/Typography'
 import { useStore } from 'app/features/miso/context/store'
 import { WhitelistEntry } from 'app/features/miso/context/types'
 import { useToken } from 'app/hooks/Tokens'
 import { useActiveWeb3React } from 'app/services/web3'
+import { NATIVE } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 import { useFormContext } from 'react-hook-form'
 

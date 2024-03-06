@@ -1,5 +1,5 @@
-import { Token } from '@sushiswap/core-sdk'
 import { TokenInfo } from '@uniswap/token-lists'
+import { Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { isAddress } from './validate'

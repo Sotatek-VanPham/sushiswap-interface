@@ -1,10 +1,10 @@
 import { I18n } from '@lingui/core'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, SUSHI, SUSHI_ADDRESS } from '@sushiswap/core-sdk'
 import { AXSUSHI } from 'app/config/tokens/ethereum'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTokenBalances } from 'app/state/wallet/hooks'
+import { ChainId, SUSHI, SUSHI_ADDRESS } from 'colend-forking-sdk'
 import { useEffect, useMemo } from 'react'
 
 import { StrategyGeneralInfo, StrategyHook, StrategyTokenDefinitions } from '../types'

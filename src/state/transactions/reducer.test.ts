@@ -1,4 +1,4 @@
-import { ChainId } from '@sushiswap/core-sdk'
+import { ChainId } from 'colend-forking-sdk'
 import { createStore, Store } from 'redux'
 
 import { addTransaction, checkedTransaction, clearAllTransactions, finalizeTransaction } from './actions'

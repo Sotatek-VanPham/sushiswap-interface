@@ -1,4 +1,3 @@
-import { ChainId } from '@sushiswap/core-sdk'
 import { GRAPH_HOST } from 'app/services/graph/constants'
 import {
   barHistoriesQuery,
@@ -8,6 +7,7 @@ import {
   barXsushiUserQuery,
   feesQuery,
 } from 'app/services/graph/queries/bar'
+import { ChainId } from 'colend-forking-sdk'
 import { getUnixTime, startOfHour, startOfMinute, startOfSecond, subDays } from 'date-fns'
 import { request } from 'graphql-request'
 

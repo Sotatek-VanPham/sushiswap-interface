@@ -1,11 +1,11 @@
 import { BeakerIcon, GlobeIcon, SwitchVerticalIcon, TrendingUpIcon } from '@heroicons/react/outline'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { ChainId, SUSHI_ADDRESS } from '@sushiswap/core-sdk'
 import { RocketIcon, WalletIcon } from 'app/components/Icon'
 import { Feature } from 'app/enums'
 import { featureEnabled } from 'app/functions'
 import { useActiveWeb3React } from 'app/services/web3'
+import { ChainId, SUSHI_ADDRESS } from 'colend-forking-sdk'
 import { ReactNode, useMemo } from 'react'
 
 export interface MenuItemLeaf {

@@ -1,6 +1,5 @@
 import { Signature } from '@ethersproject/bytes'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, CurrencyAmount } from '@sushiswap/core-sdk'
 import { LimitOrder, STOP_LIMIT_ORDER_ADDRESS } from '@sushiswap/limit-order-sdk'
 import useLimitOrders from 'app/features/legacy/limit-order/useLimitOrders'
 import { calculateGasMargin } from 'app/functions'
@@ -13,6 +12,7 @@ import { clear, setLimitOrderAttemptingTxn, setLimitOrderBentoPermit } from 'app
 import { useLimitOrderDerivedCurrencies } from 'app/state/limit-order/hooks'
 import { OrderExpiration } from 'app/state/limit-order/reducer'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
+import { Currency, CurrencyAmount } from 'colend-forking-sdk'
 import { BigNumber } from 'ethers'
 import { useCallback } from 'react'
 

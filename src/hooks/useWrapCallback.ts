@@ -1,8 +1,8 @@
-import { ChainId, Currency, NATIVE, WNATIVE } from '@sushiswap/core-sdk'
 import { tryParseAmount } from 'app/functions/parse'
 import { useActiveWeb3React } from 'app/services/web3'
 import { useTransactionAdder } from 'app/state/transactions/hooks'
 import { useCurrencyBalance } from 'app/state/wallet/hooks'
+import { ChainId, Currency, NATIVE, WNATIVE } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 import { useWETH9Contract } from './useContract'

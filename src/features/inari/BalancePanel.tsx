@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { CurrencyLogo } from 'app/components/CurrencyLogo'
 import Input from 'app/components/Input'
 import Typography from 'app/components/Typography'
@@ -8,6 +7,7 @@ import { useAppDispatch } from 'app/state/hooks'
 import { setValues } from 'app/state/inari/actions'
 import { useDerivedInariState, useInariState, useSelectedInariStrategy } from 'app/state/inari/hooks'
 import { Field } from 'app/state/inari/types'
+import { CurrencyAmount, Token } from 'colend-forking-sdk'
 import React, { FC, useCallback } from 'react'
 
 interface BalancePanelProps {

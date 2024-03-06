@@ -6,6 +6,13 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 import { toShare } from '@sushiswap/bentobox-sdk'
+import KashiCooker from 'app/entities/KashiCooker'
+import { useKashiMarket } from 'app/features/kashi/KashiMarket'
+import { ZERO as BigNumberZERO } from 'app/functions'
+import { useActiveWeb3React } from 'app/services/web3'
+import { useAppSelector } from 'app/state/hooks'
+import { selectSlippage } from 'app/state/slippage/slippageSlice'
+import { useTransactionAdder } from 'app/state/transactions/hooks'
 import {
   Currency,
   CurrencyAmount,
@@ -14,15 +21,8 @@ import {
   SUSHISWAP_MULTI_EXACT_SWAPPER_ADDRESS,
   TradeType,
   ZERO,
-} from '@sushiswap/core-sdk'
-import { Trade as LegacyTrade } from '@sushiswap/core-sdk/dist/entities/Trade'
-import KashiCooker from 'app/entities/KashiCooker'
-import { useKashiMarket } from 'app/features/kashi/KashiMarket'
-import { ZERO as BigNumberZERO } from 'app/functions'
-import { useActiveWeb3React } from 'app/services/web3'
-import { useAppSelector } from 'app/state/hooks'
-import { selectSlippage } from 'app/state/slippage/slippageSlice'
-import { useTransactionAdder } from 'app/state/transactions/hooks'
+} from 'colend-forking-sdk'
+import { Trade as LegacyTrade } from 'colend-forking-sdk/dist/entities/Trade'
 import { useCallback } from 'react'
 
 export interface RepayExecutePayload {

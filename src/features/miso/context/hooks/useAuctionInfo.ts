@@ -1,11 +1,11 @@
 import { Interface } from '@ethersproject/abi'
 import { BigNumber } from '@ethersproject/bignumber'
-import { CHAIN_KEY } from '@sushiswap/core-sdk'
 import MISO from '@sushiswap/miso/exports/all.json'
 import BASE_AUCTION_ABI from 'app/constants/abis/base-auction.json'
 import { AuctionTemplate, RawLauncherInfo } from 'app/features/miso/context/types'
 import { useContract, useMisoHelperContract } from 'app/hooks'
 import { useActiveWeb3React } from 'app/services/web3'
+import { CHAIN_KEY } from 'colend-forking-sdk'
 import { useSingleContractWithCallData } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
 

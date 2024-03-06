@@ -1,6 +1,5 @@
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
-import { Currency, CurrencyAmount, Percent, Token } from '@sushiswap/core-sdk'
 import Button from 'app/components/Button'
 import ListPanel from 'app/components/ListPanel'
 import { HeadlessUiModal } from 'app/components/Modal'
@@ -10,6 +9,7 @@ import { useFarmListItemDetailsModal } from 'app/features/onsen/FarmListItemDeta
 import { setOnsenModalOpen } from 'app/features/onsen/onsenSlice'
 import { useAppDispatch } from 'app/state/hooks'
 import { Field } from 'app/state/mint/actions'
+import { Currency, CurrencyAmount, Percent, Token } from 'colend-forking-sdk'
 import React, { FC } from 'react'
 
 interface PoolAddLiquidityReviewContentProps {

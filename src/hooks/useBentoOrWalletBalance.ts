@@ -1,6 +1,6 @@
-import { Currency, CurrencyAmount, Token } from '@sushiswap/core-sdk'
 import { useBentoBalancesV2 } from 'app/state/bentobox/hooks'
 import { useCurrencyBalances } from 'app/state/wallet/hooks'
+import { Currency, CurrencyAmount, Token } from 'colend-forking-sdk'
 import { useMemo } from 'react'
 
 export const useBentoOrWalletBalances = (
