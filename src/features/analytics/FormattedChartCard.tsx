@@ -39,12 +39,8 @@ export default function FormattedChartCard({
       const x = cur.x.getTime()
       // @ts-ignore TYPE NEEDS FIXING
       if (Math.round(x / 1000) >= currentDate - timespan?.length) {
-        acc.push({
-          // @ts-ignore TYPE NEEDS FIXING
-          x,
-          // @ts-ignore TYPE NEEDS FIXING
-          y: cur.y,
-        })
+        // @ts-ignore TYPE NEEDS FIXING
+        acc.push({ x, y: cur.y })
       }
 
       return acc

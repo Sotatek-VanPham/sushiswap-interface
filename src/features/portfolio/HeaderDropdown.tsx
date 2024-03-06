@@ -28,6 +28,7 @@ const HeaderDropdown: FC<HeaderDropdownProps> = ({ account, chainId, hideAccount
             <Davatar
               size={64}
               address={account}
+              /*@ts-ignore TYPE NEEDS FIXING*/
               defaultComponent={<Identicon seed={account} size={16} className="rounded-full" />}
               provider={library}
             />

@@ -16,11 +16,8 @@ const useFeeData: UseFeeData = () => {
   const blockNumber = useBlockNumber()
 
   // FeeData uses null..
-  const [feeData, setFeeData] = useState<FeeData>({
-    maxFeePerGas: null,
-    maxPriorityFeePerGas: null,
-    gasPrice: null,
-  })
+  // @ts-ignore TYPE NEEDS FIXING
+  const [feeData, setFeeData] = useState<FeeData>({ maxFeePerGas: null, maxPriorityFeePerGas: null, gasPrice: null })
 
   const eip1559 =
     !!chainId && !!blockNumber ? blockNumber >= Number(EIP_1559_ACTIVATION_BLOCK[chainId as ChainId]) : false

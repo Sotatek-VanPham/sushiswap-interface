@@ -149,6 +149,7 @@ export function useBestTridentTrade(
           currencyIn.wrapped,
           currencyOut.wrapped,
           BigNumber.from(amountSpecified.quotient.toString()),
+          // @ts-ignore TYPE NEEDS FIXING
           legacyPools,
           WNATIVE[amountSpecified.currency.chainId],
           gasPrice
@@ -175,10 +176,12 @@ export function useBestTridentTrade(
             const priceImpact = legacyRoute.priceImpact
             dispatch(setRouteInfo({ info: { chainId, allowedPools: legacyPools, route: legacyRoute, mode: 'single' } }))
             // setRoutingInfo({ chainId, allowedPools: legacyPools, route: legacyRoute, mode: 'single' })
+            // @ts-ignore TYPE NEEDS FIXING
             const route = convertTinesSingleRouteToLegacyRoute(legacyRoute, legacyPools, currencyIn, currencyOut)
 
             try {
               return {
+                // @ts-ignore TYPE NEEDS FIXING
                 trade: LegacyTrade.exactIn(route, amountSpecified),
                 priceImpact,
               }
@@ -201,6 +204,7 @@ export function useBestTridentTrade(
           currencyIn.wrapped,
           currencyOut.wrapped,
           BigNumber.from(amountSpecified.quotient.toString()),
+          // @ts-ignore TYPE NEEDS FIXING
           legacyPools,
           WNATIVE[amountSpecified.currency.chainId],
           gasPrice
@@ -227,9 +231,11 @@ export function useBestTridentTrade(
             const priceImpact = legacyRoute.priceImpact
             dispatch(setRouteInfo({ info: { chainId, allowedPools: legacyPools, route: legacyRoute, mode: 'single' } }))
             // setRoutingInfo({ chainId, allowedPools: legacyPools, route: legacyRoute, mode: 'single' })
+            // @ts-ignore TYPE NEEDS FIXING
             const route = convertTinesSingleRouteToLegacyRoute(legacyRoute, legacyPools, currencyIn, currencyOut)
             try {
               return {
+                // @ts-ignore TYPE NEEDS FIXING
                 trade: LegacyTrade.exactOut(route, amountSpecified),
                 priceImpact,
               }

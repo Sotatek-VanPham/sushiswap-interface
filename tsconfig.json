@@ -2,6 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
+      "react": [ "./node_modules/@types/react" ],
       "app/animation/*": ["./animation/*"],
       "app/components": ["./components/index.ts"],
       "app/components/*": ["./components/*"],
@@ -42,7 +43,6 @@
     "skipLibCheck": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
@@ -50,7 +50,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "downlevelIteration": true,
-    "incremental": true
+    "incremental": true,
+    "noEmit": true,
+    "noEmitOnError": true,
   },
   "include": ["next-env.d.ts", "sushi-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

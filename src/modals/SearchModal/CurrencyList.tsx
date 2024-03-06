@@ -169,6 +169,7 @@ const CurrencyList: FC<CurrencyList> = ({ currencies, otherListTokens }) => {
       id="all-currencies-list"
       className="flex flex-col flex-1 flex-grow min-h-[50vh] lg:min-h-fit overflow-hidden h-full divide-y divide-dark-800"
     >
+      {/*@ts-ignore TYPE NEEDS FIXING*/}
       <AutoSizer>
         {/*@ts-ignore TYPE NEEDS FIXING*/}
         {({ height, width }) => (

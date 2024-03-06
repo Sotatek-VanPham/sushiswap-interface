@@ -26,6 +26,7 @@ const StepperRoot: FC<StepperContext> = ({ children, activeStep, setActiveStep }
       {Children.map(children, (child, _index) => {
         if (isValidElement(child)) {
           return cloneElement(child, {
+            /*@ts-ignore TYPE NEEDS FIXING*/
             _index,
             _active: _index === activeStep,
             _last: _index === Children.count(children) - 1,

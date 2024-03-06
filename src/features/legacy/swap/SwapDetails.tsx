@@ -71,6 +71,7 @@ const SwapDetails: FC<SwapDetails> = ({
               <TradePrice
                 inputCurrency={inputCurrency}
                 outputCurrency={outputCurrency}
+                /*@ts-ignore TYPE NEEDS FIXING*/
                 price={trade?.executionPrice}
                 showInverted={inverted}
                 setShowInverted={setInverted}

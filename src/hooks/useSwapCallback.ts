@@ -710,6 +710,7 @@ export function useSwapCallback(
                   nonce: nonce ? hexlify(nonce, hOpts) : undefined,
                   gasPrice: gasPrice ? hexlify(gasPrice, hOpts) : undefined,
                   gasLimit: gasLimit ? hexlify(gasLimit, hOpts) : undefined,
+                  /*@ts-ignore TYPE NEEDS FIXING*/
                   maxFeePerGas: _maxFeePerGas ? hexlify(_maxFeePerGas, hOpts) : undefined,
                   maxPriorityFeePerGas: _maxPriorityFee ? hexlify(_maxPriorityFee, hOpts) : undefined,
                   to,

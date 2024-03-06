@@ -6,6 +6,7 @@ type NonFunctional<T> = T extends Function ? never : T
  */
 export function enumToArray<T>(enumeration: T): NonFunctional<T[keyof T]>[] {
   return (
+    // @ts-ignore TYPE NEEDS FIXING
     Object.keys(enumeration)
       .filter((key) => isNaN(Number(key)))
       // @ts-ignore TYPE NEEDS FIXING

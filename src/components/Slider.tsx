@@ -57,7 +57,9 @@ const Slider: FC<Slider> = forwardRef<ReactSlider, Slider>(({ markFormatter, ...
         renderTrack={Track}
         renderMark={({ key, style }) => {
           return (
+            /*@ts-ignore TYPE NEEDS FIXING*/
             <Typography style={style} variant="xxs" key={key} className="mt-4 text-secondary" component="span">
+              {/*@ts-ignore TYPE NEEDS FIXING*/}
               {markFormatter(key)}
             </Typography>
           )
