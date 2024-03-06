@@ -174,7 +174,7 @@
     "jest": "^27.3.1",
     "jotai": "^1.6.1",
     "js-cookie": "^3.0.1",
-    "lint-staged": "^11.0.0",
+    "lint-staged": "^15.2.2",
     "lodash": "^4.17.21",
     "lodash.zip": "^4.2.0",
     "lottie-react": "2.1.0",
